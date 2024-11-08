@@ -43,8 +43,9 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-.config
-.local
+.config/code-server
+.local/share/code-server
+collections/vector_db
 .bash_history
 nosetests.xml
 coverage.xml
