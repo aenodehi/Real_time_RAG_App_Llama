@@ -43,7 +43,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-.config/code-server
+.config/code-server/
 .local/share/code-server
 collections/vector_db
 .bash_history
