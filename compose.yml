@@ -1,0 +1,21 @@
+services:
+  vscode:
+    image: codercom/code-server:latest
+    container_name: vscode
+    ports:
+      - "8080:8080"
+      - "5000:5000"
+    volumes:
+      - ./:/home/coder
+    environment:
+      - PASSWORD=1
+    restart: always
+
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - .:/qdrant/storage
+    restart: always
